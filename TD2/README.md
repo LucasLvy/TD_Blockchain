@@ -13,7 +13,7 @@ UFW :
 
 ### Adapt SSH config (2pts) ✔️
 Les clés SSH sont bien configurées :
-![sshKeys](img/sshKeys.png)
+![sshKeys](img/SSHKeys.png)
 <br>
 
 ### Install BTC Pay server (4 pts) ✔️
@@ -22,7 +22,7 @@ BTC Pay server est bien installé :
 <br>
 
 ### Configure your BTC Pay server (2 pts) ✔️
-Le server est bien configuré et se lance :
+Le serveur est bien configuré et se lance :
 ![btcpayWebsite](img/btcpayWebsite.png)
 <br>
 
@@ -35,7 +35,7 @@ On a ainsi le site :
 ![Website](img/Website.png)
 <br>
 
-### Create a button to pay with tBTC (2 pts) & Create a button to pay with lightning (2 pts) ✔️
+### Create a button to pay with tBTC (2 pts) & Create a button to pay with lightning (2 pts)
 Les deux boutons sont créés sur le site wordpress :
 ![Buttons](img/Buttons.png)
 <br>
