@@ -1,0 +1,36 @@
+const evaluator = require("../../../amm-101/build/contracts/Evaluator.json")
+const swap = require("../build/contracts/SwapContract.json")
+
+const Web3 = require('web3');
+let web3 = new Web3("https://rinkeby.infura.io/v3/5f3fcc41ca114f5a965b59035680aa52")
+const sw = new web3.eth.Contract(swap.abi, "0xde1C9b6648baa1905B66D1b2d9cb6B01e11a2E98")
+const eval = new web3.eth.Contract(evaluator.abi, "0x90315516b2F5534ac68f109bA9412530EbECfac1")
+// const claimable = new web3.eth.Contract(claim.abi, "0xb5d82FEE98d62cb7Bc76eabAd5879fa4b29fFE94")
+// const solTok = new web3.eth.Contract(tok.abi, "0x2EC2b6bE2cff18aaeEd4dFFd116C590Ef71a4630")
+// let batch = new web3.eth.BatchRequest()
+//const td = new web3.eth.Contract(lazy.abi, "0x54040620b3A61c564FC2C21E81f28c121F11cd21")
+a()
+async function a() {
+    let acc = web3.eth.accounts.privateKeyToAccount(process.env.PK)
+    web3.eth.accounts.wallet.add(acc);
+    console.log(await eval.methods.submitExercice("0xde1C9b6648baa1905B66D1b2d9cb6B01e11a2E98").send({ from: "0x8067c1F2E8ec7FD00C08Ff0FbedAF185cbd8ca0A", gasPrice: '9000000000', gas: '2100000' }))
+    // console.log(await eval.methods.dummyToken().call())
+    // console.log(await sw.methods.addLiquidity().send({ from: "0x8067c1F2E8ec7FD00C08Ff0FbedAF185cbd8ca0A", gasPrice: '90000000000', gas: '21000000' }))
+    // console.log(await eval.methods.ex1_showIHaveTokens().send({ from: "0x8067c1F2E8ec7FD00C08Ff0FbedAF185cbd8ca0A", gasPrice: '9000000000', gas: '2100000' }))
+    // console.log(await eval.methods.ex2_showIProvidedLiquidity().send({ from: "0x8067c1F2E8ec7FD00C08Ff0FbedAF185cbd8ca0A", gasPrice: '9000000000', gas: '2100000' }))
+    // console.log(await eval.methods.ex6a_getTickerAndSupply().send({ from: "0x8067c1F2E8ec7FD00C08Ff0FbedAF185cbd8ca0A", gasPrice: '90000000000', gas: '21000000' }))
+    // console.log(await eval.methods.readTicker("0x8067c1F2E8ec7FD00C08Ff0FbedAF185cbd8ca0A").call())
+    // console.log(await eval.methods.readSupply("0x8067c1F2E8ec7FD00C08Ff0FbedAF185cbd8ca0A").call())
+    // console.log(await eval.methods.submitErc20("0x93e7A28E43544daFdf368039351Bc6eb06eA12cb").send({ from: "0x8067c1F2E8ec7FD00C08Ff0FbedAF185cbd8ca0A", gasPrice: '9000000000', gas: '2100000' }))
+    // console.log(await eval.methods.ex6b_testErc20TickerAndSupply().send({ from: "0x8067c1F2E8ec7FD00C08Ff0FbedAF185cbd8ca0A", gasPrice: '900000000', gas: '2100000' }))
+    // console.log(await eval.methods.ex7_tokenIsTradableOnUniswap().send({ from: "0x8067c1F2E8ec7FD00C08Ff0FbedAF185cbd8ca0A", gasPrice: '9000000000', gas: '2100000' }))
+    // console.log(await eval.methods.ex8_contractCanSwapVsEth().send({ from: "0x8067c1F2E8ec7FD00C08Ff0FbedAF185cbd8ca0A", gasPrice: '90000000000', gas: '21000000' }))
+    // console.log(await eval.methods.ex9_contractCanSwapVsDummyToken().send({ from: "0x8067c1F2E8ec7FD00C08Ff0FbedAF185cbd8ca0A", gasPrice: '900000000000', gas: '21000000' }))
+    console.log(await eval.methods.ex10_contractCanProvideLiquidity().send({ from: "0x8067c1F2E8ec7FD00C08Ff0FbedAF185cbd8ca0A", gasPrice: '9000000000', gas: '21000000' }))
+    console.log(await eval.methods.ex11_contractCanWithdrawLiquidity().send({ from: "0x8067c1F2E8ec7FD00C08Ff0FbedAF185cbd8ca0A", gasPrice: '9000000000', gas: '21000000' }))
+    // console.log(await eval.methods.ex2_showIProvidedLiquidity().send({from: "0x8067c1F2E8ec7FD00C08Ff0FbedAF185cbd8ca0A", gasPrice: '900000000000', gas:'21000000'}))
+    // console.log(await eval.methods.ex2_showIProvidedLiquidity().send({from: "0x8067c1F2E8ec7FD00C08Ff0FbedAF185cbd8ca0A", gasPrice: '900000000000', gas:'21000000'}))
+    // console.log(await eval.methods.ex2_showIProvidedLiquidity().send({from: "0x8067c1F2E8ec7FD00C08Ff0FbedAF185cbd8ca0A", gasPrice: '900000000000', gas:'21000000'}))
+    // console.log(await eval.methods.ex2_showIProvidedLiquidity().send({from: "0x8067c1F2E8ec7FD00C08Ff0FbedAF185cbd8ca0A", gasPrice: '900000000000', gas:'21000000'}))
+
+}

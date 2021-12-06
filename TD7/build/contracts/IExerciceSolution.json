@@ -1,0 +1,428 @@
+{
+  "contractName": "IExerciceSolution",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "addLiquidity",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "withdrawLiquidity",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "swapYourTokenForDummyToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "swapYourTokenForEth",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"addLiquidity\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"swapYourTokenForDummyToken\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"swapYourTokenForEth\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"withdrawLiquidity\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/IExerciceSolution.sol\":\"IExerciceSolution\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/IExerciceSolution.sol\":{\"keccak256\":\"0x6f39815003a4f2f119c49f5aa869dd256f39f2e5e4469a6d0a49211227a3f8f9\",\"urls\":[\"bzz-raw://30ff57110cda30c0f4143a9f0b5e0b911570ce41e90aafeeebc3ab0e9b24393a\",\"dweb:/ipfs/QmXaj2aN89XVKULSwgzAE3A2xoYkRdx4WiH2gCU7iBkqHF\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.7.6;\n\ninterface IExerciceSolution {\n    function addLiquidity() external;\n\n    function withdrawLiquidity() external;\n\n    function swapYourTokenForDummyToken() external;\n\n    function swapYourTokenForEth() external;\n}\n",
+  "sourcePath": "/home/lucas/TD_Blockchain/TD7/contracts/IExerciceSolution.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/IExerciceSolution.sol",
+    "exportedSymbols": {
+      "IExerciceSolution": [
+        1482
+      ]
+    },
+    "id": 1483,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1469,
+        "literals": [
+          "solidity",
+          "^",
+          "0.7",
+          ".6"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:6"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 1482,
+        "linearizedBaseContracts": [
+          1482
+        ],
+        "name": "IExerciceSolution",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "e8078d94",
+            "id": 1472,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addLiquidity",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1470,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "80:2:6"
+            },
+            "returnParameters": {
+              "id": 1471,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "91:0:6"
+            },
+            "scope": 1482,
+            "src": "59:33:6",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "7ea382c1",
+            "id": 1475,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawLiquidity",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1473,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "124:2:6"
+            },
+            "returnParameters": {
+              "id": 1474,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "135:0:6"
+            },
+            "scope": 1482,
+            "src": "98:38:6",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "7c587b22",
+            "id": 1478,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "swapYourTokenForDummyToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1476,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "177:2:6"
+            },
+            "returnParameters": {
+              "id": 1477,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "188:0:6"
+            },
+            "scope": 1482,
+            "src": "142:47:6",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "c4a85993",
+            "id": 1481,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "swapYourTokenForEth",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1479,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "223:2:6"
+            },
+            "returnParameters": {
+              "id": 1480,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "234:0:6"
+            },
+            "scope": 1482,
+            "src": "195:40:6",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1483,
+        "src": "25:212:6"
+      }
+    ],
+    "src": "0:238:6"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/IExerciceSolution.sol",
+      "exportedSymbols": {
+        "IExerciceSolution": [
+          1482
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.7",
+            ".6"
+          ]
+        },
+        "id": 1469,
+        "name": "PragmaDirective",
+        "src": "0:23:6"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            1482
+          ],
+          "name": "IExerciceSolution",
+          "scope": 1483
+        },
+        "children": [
+          {
+            "attributes": {
+              "functionSelector": "e8078d94",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "addLiquidity",
+              "scope": 1482,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1470,
+                "name": "ParameterList",
+                "src": "80:2:6"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1471,
+                "name": "ParameterList",
+                "src": "91:0:6"
+              }
+            ],
+            "id": 1472,
+            "name": "FunctionDefinition",
+            "src": "59:33:6"
+          },
+          {
+            "attributes": {
+              "functionSelector": "7ea382c1",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "withdrawLiquidity",
+              "scope": 1482,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1473,
+                "name": "ParameterList",
+                "src": "124:2:6"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1474,
+                "name": "ParameterList",
+                "src": "135:0:6"
+              }
+            ],
+            "id": 1475,
+            "name": "FunctionDefinition",
+            "src": "98:38:6"
+          },
+          {
+            "attributes": {
+              "functionSelector": "7c587b22",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "swapYourTokenForDummyToken",
+              "scope": 1482,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1476,
+                "name": "ParameterList",
+                "src": "177:2:6"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1477,
+                "name": "ParameterList",
+                "src": "188:0:6"
+              }
+            ],
+            "id": 1478,
+            "name": "FunctionDefinition",
+            "src": "142:47:6"
+          },
+          {
+            "attributes": {
+              "functionSelector": "c4a85993",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "swapYourTokenForEth",
+              "scope": 1482,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1479,
+                "name": "ParameterList",
+                "src": "223:2:6"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 1480,
+                "name": "ParameterList",
+                "src": "234:0:6"
+              }
+            ],
+            "id": 1481,
+            "name": "FunctionDefinition",
+            "src": "195:40:6"
+          }
+        ],
+        "id": 1482,
+        "name": "ContractDefinition",
+        "src": "25:212:6"
+      }
+    ],
+    "id": 1483,
+    "name": "SourceUnit",
+    "src": "0:238:6"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.6+commit.7338295f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-12-05T17:04:30.142Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
