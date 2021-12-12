@@ -91,6 +91,17 @@ def create_candle_db(symbol, interval):
         ema_200 REAL
         );''')
 
+def create_trade_db():
+    cur.execute(
+        f'''CREATE TABLE trades(
+                uuid INTEGER PRIMARY KEY,
+                pair TEXT,
+                quantity REAL,
+                price REAL,
+                direction TEXT,
+                type TEXT,
+                timestamp INT,
+                );''')
 
 def create_order(API_KEY, SECRET_KEY, direction, price, amount, pair, order_type):
     servertimeint = get("https://api.binance.com/api/v1/time").json()['serverTime']
@@ -99,7 +110,18 @@ def create_order(API_KEY, SECRET_KEY, direction, price, amount, pair, order_type
         "X-MBX-APIKEY": API_KEY,
     }
     hashedsig = hmac.new(SECRET_KEY.encode(), params.encode(), hashlib.sha256).hexdigest()
-    return post(f"{test_base_url}order?{params}&signature={hashedsig}", headers=headers).json()
+    res = post(f"{test_base_url}order?{params}&signature={hashedsig}", headers=headers).json()
+    cur.execute(f"""INSERT INTO trades VALUES
+                    ({res["orderId"]},
+                    {res["symbol"]},
+                    {res["origQty"]},
+                    {res["price"]},
+                    {res["side"]},
+                    {res["type"]},
+                    {res["transactTime"]})
+                """)
+    con.commit()
+    return res
 
 
 def cancel_order(API_KEY, SECRET_KEY, uuid, pair):
@@ -109,7 +131,10 @@ def cancel_order(API_KEY, SECRET_KEY, uuid, pair):
         "X-MBX-APIKEY": API_KEY,
     }
     hashedsig = hmac.new(SECRET_KEY.encode(), params.encode(), hashlib.sha256).hexdigest()
-    return delete(f"{test_base_url}order?{params}&signature={hashedsig}", headers=headers).json()
+    res = delete(f"{test_base_url}order?{params}&signature={hashedsig}", headers=headers).json()
+    cur.execute(f"DELETE FROM trades WHERE uuid={uuid};")
+    con.commit()
+    return res
 
 
 API_KEY = ""
@@ -118,11 +143,11 @@ SECRET_API_KEY = ""
 if __name__ == '__main__':
     print()
     # get_ordres()
-    # print(create_order(API_KEY, SECRET_API_KEY, 'SELL', 4000, 1, 'ETHUSDT', 'LIMIT'))
+    print(create_order(API_KEY, SECRET_API_KEY, 'SELL', 4000, 1, 'ETHUSDT', 'LIMIT'))
     # print(cancel_order(API_KEY, SECRET_API_KEY, 43020, "ETHUSDT"))
     # create_candle_db("BTCUSDT", "5m")
     # create_db()
-    candle_modify("BTCUSDT", "5m")
+    # candle_modify("BTCUSDT", "5m")
     # print(cur.execute("SELECT COUNT(*) FROM binance_BTCUSDT_5m").fetchall())
     # cryptos = get_all_crypto()
     # get_bid_or_ask("asks", cryptos[0])
