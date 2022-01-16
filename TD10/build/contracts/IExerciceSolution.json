@@ -1,0 +1,522 @@
+{
+  "contractName": "IExerciceSolution",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "depositSomeTokens",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "withdrawSomeTokens",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "borrowSomeTokens",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "repaySomeTokens",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "doAFlashLoan",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "repayFlashLoan",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"borrowSomeTokens\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"depositSomeTokens\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"doAFlashLoan\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"repayFlashLoan\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"repaySomeTokens\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"withdrawSomeTokens\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/IExerciceSolution.sol\":\"IExerciceSolution\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/IExerciceSolution.sol\":{\"keccak256\":\"0x88649d78eeb88b715ce59c1e5409c61280e8d379f9b3e05b31b88688ea2f68db\",\"urls\":[\"bzz-raw://9f0e5fe095abed8614a2d31b41702a3d7d35f758d88b6ca41ed16c58a3a013e5\",\"dweb:/ipfs/QmYxmYPgUSxdUebCDXuZpNUJJhsaTTpTWBmGHjcQM3wTeP\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.7.6;\n\ninterface IExerciceSolution {\n    function depositSomeTokens() external;\n\n    function withdrawSomeTokens() external;\n\n    function borrowSomeTokens() external;\n\n    function repaySomeTokens() external;\n\n    function doAFlashLoan() external;\n\n    function repayFlashLoan() external;\n}\n",
+  "sourcePath": "/home/lucas/TD_Blockchain/TD10/contracts/IExerciceSolution.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/IExerciceSolution.sol",
+    "exportedSymbols": {
+      "IExerciceSolution": [2002]
+    },
+    "id": 2003,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1983,
+        "literals": ["solidity", "^", "0.7", ".6"],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:8"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 2002,
+        "linearizedBaseContracts": [2002],
+        "name": "IExerciceSolution",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "f6b96bae",
+            "id": 1986,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "depositSomeTokens",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1984,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "85:2:8"
+            },
+            "returnParameters": {
+              "id": 1985,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "96:0:8"
+            },
+            "scope": 2002,
+            "src": "59:38:8",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "db50609f",
+            "id": 1989,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawSomeTokens",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1987,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "130:2:8"
+            },
+            "returnParameters": {
+              "id": 1988,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "141:0:8"
+            },
+            "scope": 2002,
+            "src": "103:39:8",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "1a231a71",
+            "id": 1992,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "borrowSomeTokens",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1990,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "173:2:8"
+            },
+            "returnParameters": {
+              "id": 1991,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "184:0:8"
+            },
+            "scope": 2002,
+            "src": "148:37:8",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "4b5bd34f",
+            "id": 1995,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "repaySomeTokens",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1993,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "215:2:8"
+            },
+            "returnParameters": {
+              "id": 1994,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "226:0:8"
+            },
+            "scope": 2002,
+            "src": "191:36:8",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "d871f594",
+            "id": 1998,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "doAFlashLoan",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1996,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "254:2:8"
+            },
+            "returnParameters": {
+              "id": 1997,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "265:0:8"
+            },
+            "scope": 2002,
+            "src": "233:33:8",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "fc6669b6",
+            "id": 2001,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "repayFlashLoan",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1999,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "295:2:8"
+            },
+            "returnParameters": {
+              "id": 2000,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "306:0:8"
+            },
+            "scope": 2002,
+            "src": "272:35:8",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2003,
+        "src": "25:284:8"
+      }
+    ],
+    "src": "0:310:8"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/IExerciceSolution.sol",
+      "exportedSymbols": {
+        "IExerciceSolution": [2002]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": ["solidity", "^", "0.7", ".6"]
+        },
+        "id": 1983,
+        "name": "PragmaDirective",
+        "src": "0:23:8"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [null],
+          "contractDependencies": [null],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [2002],
+          "name": "IExerciceSolution",
+          "scope": 2003
+        },
+        "children": [
+          {
+            "attributes": {
+              "functionSelector": "f6b96bae",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [null],
+              "name": "depositSomeTokens",
+              "scope": 2002,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [null]
+                },
+                "children": [],
+                "id": 1984,
+                "name": "ParameterList",
+                "src": "85:2:8"
+              },
+              {
+                "attributes": {
+                  "parameters": [null]
+                },
+                "children": [],
+                "id": 1985,
+                "name": "ParameterList",
+                "src": "96:0:8"
+              }
+            ],
+            "id": 1986,
+            "name": "FunctionDefinition",
+            "src": "59:38:8"
+          },
+          {
+            "attributes": {
+              "functionSelector": "db50609f",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [null],
+              "name": "withdrawSomeTokens",
+              "scope": 2002,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [null]
+                },
+                "children": [],
+                "id": 1987,
+                "name": "ParameterList",
+                "src": "130:2:8"
+              },
+              {
+                "attributes": {
+                  "parameters": [null]
+                },
+                "children": [],
+                "id": 1988,
+                "name": "ParameterList",
+                "src": "141:0:8"
+              }
+            ],
+            "id": 1989,
+            "name": "FunctionDefinition",
+            "src": "103:39:8"
+          },
+          {
+            "attributes": {
+              "functionSelector": "1a231a71",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [null],
+              "name": "borrowSomeTokens",
+              "scope": 2002,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [null]
+                },
+                "children": [],
+                "id": 1990,
+                "name": "ParameterList",
+                "src": "173:2:8"
+              },
+              {
+                "attributes": {
+                  "parameters": [null]
+                },
+                "children": [],
+                "id": 1991,
+                "name": "ParameterList",
+                "src": "184:0:8"
+              }
+            ],
+            "id": 1992,
+            "name": "FunctionDefinition",
+            "src": "148:37:8"
+          },
+          {
+            "attributes": {
+              "functionSelector": "4b5bd34f",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [null],
+              "name": "repaySomeTokens",
+              "scope": 2002,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [null]
+                },
+                "children": [],
+                "id": 1993,
+                "name": "ParameterList",
+                "src": "215:2:8"
+              },
+              {
+                "attributes": {
+                  "parameters": [null]
+                },
+                "children": [],
+                "id": 1994,
+                "name": "ParameterList",
+                "src": "226:0:8"
+              }
+            ],
+            "id": 1995,
+            "name": "FunctionDefinition",
+            "src": "191:36:8"
+          },
+          {
+            "attributes": {
+              "functionSelector": "d871f594",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [null],
+              "name": "doAFlashLoan",
+              "scope": 2002,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [null]
+                },
+                "children": [],
+                "id": 1996,
+                "name": "ParameterList",
+                "src": "254:2:8"
+              },
+              {
+                "attributes": {
+                  "parameters": [null]
+                },
+                "children": [],
+                "id": 1997,
+                "name": "ParameterList",
+                "src": "265:0:8"
+              }
+            ],
+            "id": 1998,
+            "name": "FunctionDefinition",
+            "src": "233:33:8"
+          },
+          {
+            "attributes": {
+              "functionSelector": "fc6669b6",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [null],
+              "name": "repayFlashLoan",
+              "scope": 2002,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [null]
+                },
+                "children": [],
+                "id": 1999,
+                "name": "ParameterList",
+                "src": "295:2:8"
+              },
+              {
+                "attributes": {
+                  "parameters": [null]
+                },
+                "children": [],
+                "id": 2000,
+                "name": "ParameterList",
+                "src": "306:0:8"
+              }
+            ],
+            "id": 2001,
+            "name": "FunctionDefinition",
+            "src": "272:35:8"
+          }
+        ],
+        "id": 2002,
+        "name": "ContractDefinition",
+        "src": "25:284:8"
+      }
+    ],
+    "id": 2003,
+    "name": "SourceUnit",
+    "src": "0:310:8"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.6+commit.7338295f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2022-01-16T12:37:56.028Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

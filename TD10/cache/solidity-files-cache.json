@@ -1,0 +1,305 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/lucas/TD_Blockchain/TD10/contracts/ERC20TD.sol": {
+      "lastModificationDate": 1642181487526,
+      "contentHash": "e860545caffc6af8ecc333c137d48ec5",
+      "sourceName": "contracts/ERC20TD.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc"
+              ],
+              "": ["ast"]
+            }
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          }
+        }
+      },
+      "imports": ["@openzeppelin/contracts/token/ERC20/ERC20.sol"],
+      "versionPragmas": ["^0.7.6"],
+      "artifacts": ["ERC20TD"]
+    },
+    "/home/lucas/TD_Blockchain/TD10/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1642176574005,
+      "contentHash": "8065b340476f61365c076897199425f1",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc"
+              ],
+              "": ["ast"]
+            }
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./IERC20.sol",
+        "../../math/SafeMath.sol"
+      ],
+      "versionPragmas": [">=0.6.0 <0.8.0"],
+      "artifacts": ["ERC20"]
+    },
+    "/home/lucas/TD_Blockchain/TD10/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1642176573753,
+      "contentHash": "2adbd82f6d055a4751566d4671512b03",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc"
+              ],
+              "": ["ast"]
+            }
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [">=0.6.0 <0.8.0"],
+      "artifacts": ["Context"]
+    },
+    "/home/lucas/TD_Blockchain/TD10/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1642176574305,
+      "contentHash": "e0a41531d159d3a32f84b7a3ecf9fabb",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc"
+              ],
+              "": ["ast"]
+            }
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [">=0.6.0 <0.8.0"],
+      "artifacts": ["IERC20"]
+    },
+    "/home/lucas/TD_Blockchain/TD10/node_modules/@openzeppelin/contracts/math/SafeMath.sol": {
+      "lastModificationDate": 1642176574489,
+      "contentHash": "e03e12206057e809eb76c5f681170c32",
+      "sourceName": "@openzeppelin/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc"
+              ],
+              "": ["ast"]
+            }
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [">=0.6.0 <0.8.0"],
+      "artifacts": ["SafeMath"]
+    },
+    "/home/lucas/TD_Blockchain/TD10/contracts/Evaluator.sol": {
+      "lastModificationDate": 1642181481606,
+      "contentHash": "a7870f20e6216995355d15ce0f4eef62",
+      "sourceName": "contracts/Evaluator.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc"
+              ],
+              "": ["ast"]
+            }
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          }
+        }
+      },
+      "imports": [
+        "./ERC20TD.sol",
+        "./IExerciceSolution.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": ["^0.7.6"],
+      "artifacts": ["Evaluator"]
+    },
+    "/home/lucas/TD_Blockchain/TD10/contracts/IExerciceSolution.sol": {
+      "lastModificationDate": 1642181472346,
+      "contentHash": "91178fd345b45e0867c9b08c7c88de9f",
+      "sourceName": "contracts/IExerciceSolution.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc"
+              ],
+              "": ["ast"]
+            }
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": ["^0.7.6"],
+      "artifacts": ["IExerciceSolution"]
+    },
+    "/home/lucas/TD_Blockchain/TD10/contracts/ExerciceSolution.sol": {
+      "lastModificationDate": 1642182058857,
+      "contentHash": "3ee4274fd74a97bbc4226b646e01c31b",
+      "sourceName": "contracts/ExerciceSolution.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc"
+              ],
+              "": ["ast"]
+            }
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          }
+        }
+      },
+      "imports": [
+        "./IExerciceSolution.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "./IAave.sol"
+      ],
+      "versionPragmas": ["^0.7.6"],
+      "artifacts": ["ExerciceSolution"]
+    },
+    "/home/lucas/TD_Blockchain/TD10/contracts/IAave.sol": {
+      "lastModificationDate": 1642181474994,
+      "contentHash": "8d05171100f17d6d1ebcee6f3a9154c0",
+      "sourceName": "contracts/IAave.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc"
+              ],
+              "": ["ast"]
+            }
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 1
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": ["^0.7.6"],
+      "artifacts": ["IAave"]
+    }
+  }
+}
